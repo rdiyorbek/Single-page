@@ -1,0 +1,252 @@
+/* plus-jakarta-sans-500 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/plus-jakarta-sans-v8-latin-500.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* plus-jakarta-sans-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/plus-jakarta-sans-v8-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+:root {
+  --blue-color: #755cde;
+  --orange-color: #f6a560;
+  --pink-color: #f39e9e;
+  --smooth-blue-color: #61c4b7;
+  --bording-color: #552049;
+  --black-color: #030303;
+  --smooth-black-color: #7a746e;
+  --white-color: #fff7f0;
+
+  --main-ff: "Plus Jakarta Sans", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: 0.3s;
+}
+
+html {
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+img {
+  display: flex;
+  object-fit: cover;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+body {
+  font-family: var(--main-ff);
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: var(--black-color);
+  height: 100%;
+  background: var(--light-cream, #fff7f0);
+}
+
+.container {
+  width: 100%;
+  max-width: 1210px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.btn {
+  border-radius: 28px;
+  padding: 14px 45px;
+  color: var(--white-color);
+  font-weight: 700;
+  background-color: var(--pink-color);
+}
+
+.service-btn:hover {
+  background-color: var(--orange-color);
+}
+
+.service-btn:active {
+  background-color: var(--orange-color);
+}
+
+/* HEADER */
+.header {
+  padding-top: 34px;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.heaedr-btn {
+  border-radius: 28px;
+  padding: 14px 45px;
+  color: var(--white-color);
+  font-weight: 700;
+  background-color: var(--black-color);
+}
+
+.heaedr-btn:hover {
+  background: var(--blue-color);
+}
+
+/* HERO */
+.hero {
+  margin-top: 66px;
+}
+
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero-title {
+  font-feature-settings: "clig" off, "liga" off;
+  font-size: 56px;
+  font-weight: 700;
+}
+
+.hero-decription {
+  color: var(--smooth-black-color);
+  font-feature-settings: "clig" off, "liga" off;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 28px;
+  margin-top: 23px;
+  margin-bottom: 80px;
+}
+
+.hero-images {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hero2-image-problame {
+  display: flex;
+  gap: 25px;
+}
+
+.hero2-image-problame-image {
+  margin-top: 24px;
+}
+
+.hero3-image img {
+  margin-bottom: 24px;
+}
+
+/* Describe */
+.describe {
+  margin-top: 156px;
+}
+
+.describe-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 125px;
+}
+
+.describe-info__title {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.describe-info__describe {
+  margin-top: 34px;
+  margin-bottom: 32px;
+  color: var(--smooth-black-color);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 28px;
+}
+
+/* MY WORK */
+.mywork {
+  margin-top: 88px;
+  margin-bottom: 88px;
+}
+
+.mywork-info {
+  margin-bottom: 56px;
+}
+.mywork-info__title {
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-align: center;
+}
+.mywork-images {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+
+.mywork-btns {
+  margin-top: 56px;
+  display: flex;
+  justify-content: center;
+}
+
+/* Bookbox */
+.bookbox-container {
+  width: 1110px;
+  height: 320px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: var(--black-color);
+  color: #fff7f0;
+  padding: 81px 95px 80px 65px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bookbox-info_title {
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.bookbox-info_describe {
+  margin-top: 25px;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px;
+}
+
+/* Bootem header */
+.header-2 {
+  margin-top: 56px;
+  padding-bottom: 64px;
+}
